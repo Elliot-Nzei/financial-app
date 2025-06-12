@@ -1,4 +1,3 @@
-# upload_page.js placeholder
 document.addEventListener('DOMContentLoaded', function() {
     const analyzeBtn = document.getElementById('analyze-btn');
     const fileInput = document.getElementById('bank-statement');
@@ -53,4 +52,19 @@ function displayResults(data) {
         <p>Money Saved: $${data.moneySaved.toFixed(2)}</p>
         <p>Highest Recurring: ${data.highestRecurring}</p>
     `;
+}
+
+
+function analyzeBankStatement(file) {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    return fetch('http://localhost:5000/upload', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        return data;
+    });
 }
