@@ -1,1 +1,40 @@
 <!-- dashboard.html placeholder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="upload_page.html">Upload</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome, <span id="user-name">User</span>!</h1>
+        <div class="summary-cards">
+            <div class="card">
+                <h3>Total Spent</h3>
+                <p id="total-spent">$0.00</p>
+            </div>
+            <div class="card">
+                <h3>Money Saved</h3>
+                <p id="money-saved">$0.00</p>
+            </div>
+            <div class="card">
+                <h3>Highest Recurring</h3>
+                <p id="highest-recurring">None</p>
+            </div>
+        </div>
+        <!-- More insights can go here -->
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
