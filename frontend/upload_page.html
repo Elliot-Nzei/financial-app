@@ -1,1 +1,32 @@
 <!-- upload_page.html placeholder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Bank Statement</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/upload_page.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="upload_page.html">Upload</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Upload Bank Statement</h1>
+        <div class="upload-container">
+            <input type="file" id="bank-statement" accept=".csv">
+            <button id="analyze-btn">Analyze</button>
+        </div>
+        <div id="analysis-results" class="hidden">
+            <!-- Results will be populated here -->
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/upload_page.js"></script>
+</body>
+</html>
