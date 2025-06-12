@@ -1,1 +1,1 @@
-// settings.js placeholder
+# settings.js placeholder
